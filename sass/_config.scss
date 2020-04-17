@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+
+$f-rubik: 'Rubik', sans-serif;
+$font-size:18px;
+$fw-light: 400;
+$fw-normal: 500;
+
+$p-soft-blue: hsl(231, 69%, 60%);
+$p-soft-red: hsl(0, 94%, 66%);
+$n-grayish-blue:hsl(229, 8%, 60%);
+$n-very-dark-blue:hsl(229, 31%, 21%);
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    //  outline: 1px solid #e0e0e0;
+ }
+
+ h1,h2,h3,h4,h5,h6{
+     color:#333;
+     font-weight: 500;
+ }

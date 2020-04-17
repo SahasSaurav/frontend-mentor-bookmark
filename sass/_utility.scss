@@ -1,0 +1,117 @@
+
+@mixin transform($property){
+    -webkit-transform: $property !important;
+    -ms-transform: $property !important;
+    -moz-transform: $property !important;
+    -o-transform: $property !important;
+    transform: $property ;
+}
+
+
+
+body{
+    font-size: $font-size;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-weight: $fw-light;
+}
+
+body.no-scroll{
+    overflow: hidden;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.container{
+    max-width: 1440px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.col{flex-direction: column;}
+.row{flex-direction: row;}
+
+.logo{
+    object-fit: contain;
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    font-weight: $fw-normal;
+    transition: transform 300ms ease-in-out;
+    &:focus{
+        outline: none;
+    }
+    &:active{
+        @include transform(scale(0.95));
+    }
+}
+
+.btn-red{
+    background:  $p-soft-red;
+    border: 2px $p-soft-red solid;
+    color:#fff;
+    font-size: 1.1rem;
+    transition: background-color 500ms ease;
+    &:hover{
+        background: #fff;
+        color:$p-soft-red;
+    }
+}
+
+.btn-blue{
+    background:  $p-soft-blue;
+    border: 2px $p-soft-blue solid;
+    color:#fff;
+    font-size: 1.1rem;
+    transition: background-color 500ms ease;
+    &:hover{
+        background: #fff;
+        color:$p-soft-blue;
+    }
+}
+
+.btn-light{
+    background:#efefef;
+    border:2px solid #efefef;
+    color:$n-very-dark-blue;
+    font-size: 1.1rem;
+    transition: background-color 500ms ease;
+    &:hover{
+        background: #fff;
+        border:2px solid $n-very-dark-blue;
+    }
+}
+
+.inputBox{
+    outline: none;
+    border-radius: .4rem;
+    font-size: 1.1rem;
+    border:none;
+    padding: 1rem 3rem 1rem 1rem;
+}
+
+.l-heading{
+    font-size:3.5rem;
+}
+
+.m-heading{
+    font-size: 2rem;
+}
