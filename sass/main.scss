@@ -466,7 +466,7 @@
     &__item:first-of-type{
       border-top:2px solid hsla(255,0,100%,0.4);
     }
-    &__item:last-of-type{
+    &__item:last-of-type,li:nth-of-type(4){
       border: none;
     }
     &__btn{
