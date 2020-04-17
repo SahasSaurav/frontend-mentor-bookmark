@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookmark</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" async />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" async />
-    <link rel="stylesheet" href="css/main.css" async />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="css/main.css" />
     <script async src="https://kit.fontawesome.com/c60f73f892.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,7 +15,7 @@
     <nav class="nav">
         <div class="container flex">
             <img src="images/logo-bookmark.svg" alt="logo" class="nav__logo logo" />
-            <button class="nav__hamburger" id="hamburger">
+            <button class="nav__hamburger" id="hamburger" aria-label="hamburger menu">
                 <img src="images/icon-hamburger.svg" alt="">
             </button>
             <ul class="nav__list flex row">
@@ -197,9 +197,9 @@
     <section class="stay">
         <div class="container flex col">
             <p class="stay__desc">35,000+ Alraedy Joined</p>
-            <div class="stay__title m-heading">
+            <h2 class="stay__title m-heading">
                 Stay up-to-date with what we're doing
-            </div>
+            </h2>
             <form class="stay__form flex row">
                 <input type="email" name="email-id" id="email-id" aria-label="email address"
                     placeholder="Enter your email address" class="stay__input inputBox" />
