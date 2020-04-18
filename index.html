@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" integrity="sha256-/O+WvT2Eeb1RIU6iMItEhi5xlHTCLHg2HgLmVGFWyW8=" crossorigin="anonymous" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
     <link rel="stylesheet" href="css/main.css" />
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> -->
     <script async src="https://kit.fontawesome.com/c60f73f892.js" crossorigin="anonymous"></script>
 </head>
 
@@ -203,9 +203,11 @@
                 Stay up-to-date with what we're doing
             </h2>
             <form class="stay__form flex row">
-                <input type="email" name="email-id" id="email-id" aria-label="email address"
+                <span class="input-wrapper flex col">
+                    <input type="email" name="email-id" id="email-id" aria-label="email address"
                     placeholder="Enter your email address" class="stay__input inputBox" />
-                <small class="err-msg">Whoops, make sure it's an email.</small>
+                    <small class="err-msg">Whoops, make sure it's an email.</small>
+                </span>
                 <button class="stay__btn btn btn-red" id="email-btn">Contact Us</button>
             </form>
         </div>

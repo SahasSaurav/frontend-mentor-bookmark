@@ -288,6 +288,9 @@
     line-height: 1.4;
     color: #fff !important;
   }
+  &__btn{
+    height: 56px;
+  }
   &__form {
     width: 100%;
     max-width: 460px;
@@ -576,6 +579,10 @@
         margin-right: 0px;
       }
     }
+    .input-wrapper{
+      width: 100%;
+      max-width: 345px;
+    }
     &__btn{
       order: 3;
       max-width: 345px;
@@ -583,6 +590,7 @@
     .err-msg{
       order:2;
       max-width: 345px;
+      width: 100%;
     }
     input.err+.err-msg{
       margin-bottom: 1rem;
