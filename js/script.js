@@ -2,6 +2,7 @@
 const hamburger=document.getElementById('hamburger');
 const hamburgerIcon=document.querySelector('#hamburger>img');
 const navLogo=document.querySelector('.nav__logo');
+const navLinks=document.querySelectorAll('.nav__link')
 hamburger.addEventListener('click',(e)=>{
     hamburger.classList.toggle('show');
     document.body.classList.toggle('no-scroll')
@@ -19,7 +20,23 @@ hamburger.addEventListener('click',(e)=>{
     e.preventDefault();
 },false);
 
+navLinks.forEach(link=>{
+    link.addEventListener('click',(e)=>{
+        if(hamburger.classList.contains('show')==true){
+            hamburger.classList.remove('show');
+            document.body.classList.remove('no-scroll');
+            navLogo.setAttribute('src','images/logo-bookmark.svg');
+        hamburgerIcon.setAttribute('src','images/icon-hamburger.svg');
+        }
+        e.target.location.href=e.target.getAttribute('data-href');
+        e.preventDefault();
+    })
+})
 
+// const scroll = new SmoothScroll('.nav a[href*="#"]', {
+// 	speed: 500,
+// 	speedAsDuration: true
+// });
 
 //links 
 const bookmark=document.getElementById('simple-bookmark');
