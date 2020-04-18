@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookmark</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" integrity="sha256-/O+WvT2Eeb1RIU6iMItEhi5xlHTCLHg2HgLmVGFWyW8=" crossorigin="anonymous" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script async src="https://kit.fontawesome.com/c60f73f892.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,13 +22,13 @@
             </button>
             <ul class="nav__list flex row">
                 <li class="nav__item">
-                    <a href="#" class="nav__link" aria-label="features">Features</a>
+                    <a href="#features" class="nav__link" aria-label="features" data-href="feature">Features</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link" aria-label="pricing">Pricing</a>
+                    <a href="#download" class="nav__link" aria-label="pricing" data-href="#download">Pricing</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link" aria-label="contact">Contact</a>
+                    <a href="#stay" class="nav__link" aria-label="contact" data-href="#stay">Contact</a>
                 </li>
                 <li class="nav__item">
                     <button class="nav__btn btn btn-red" aria-label="login">
@@ -63,7 +65,7 @@
         </div>
         <!-- <div class="bg-blue"></div> -->
     </header>
-    <section class="features">
+    <section class="features" id="features">
         <div class="container flex col">
             <h2 class="features__title m-heading">Features</h2>
             <p class="features__desc">
@@ -94,7 +96,7 @@
             </div>
         </div>
     </section>
-    <section class="download">
+    <section class="download" id="download">
         <div class="container flex col">
             <h2 class="download__title m-heading">Download the extension</h2>
             <p class="download__desc">
@@ -194,7 +196,7 @@
             <button class="faq__btn btn btn-blue">More info</button>
         </div>
     </section>
-    <section class="stay">
+    <section class="stay" id="stay">
         <div class="container flex col">
             <p class="stay__desc">35,000+ Alraedy Joined</p>
             <h2 class="stay__title m-heading">
@@ -213,13 +215,13 @@
             <img src="images/logo-bookmark-footer.svg" alt="logo" class="footer__logo logo" />
             <ul class="footer__list flex row">
                 <li class="footer__item">
-                    <a href="#" class="footer__link" aria-label="features">Features</a>
+                    <a href="#features" class="footer__link" aria-label="features">Features</a>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link" aria-label="pricing">Pricing</a>
+                    <a href="#download" class="footer__link" aria-label="pricing">Pricing</a>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link" aria-label="contact">Contact</a>
+                    <a href="#contact" class="footer__link" aria-label="contact">Contact</a>
                 </li>
             </ul>
             <div class="footer__social">
